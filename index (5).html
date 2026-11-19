@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лестничный Хаб | Лестницы, крыльца и антресольные этажи на металлокаркасе</title>
+    <meta name="description" content="Заводское производство лестниц, входных групп, крылец и антресольных этажей на металлокаркасе под ключ. Гарантия 10 лет. 3D-проект в подарок!">
+    <meta name="keywords" content="лестничный хаб, лестница на металлокаркасе, изготовление крыльца, антресольный этаж, металлический каркас лестницы">
+    
+    <style>
+        :root {
+            --primary-color: #ff6600;
+            --dark-color: #1a1d20;
+            --light-bg: #f8f9fa;
+            --text-color: #333;
+            --transition: all 0.4s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--text-color);
+            background-color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: var(--dark-color);
+            padding: 15px 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #2d3238;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-right: 25px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .header-contacts {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .phone-btn {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+
+        .phone-btn:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-block;
+        }
+
+        .cta-btn:hover {
+            background-color: #e05500;
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(26,29,32,0.75), rgba(26,29,32,0.85)), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDYwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxNDE3MWEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMjUyYTMwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxwYXRoIGQ9Ik0gNDAgMCBMIDAgMCAwIDQwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjA0IiBzdHJva2Utd2lkdGg9IjEiLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjAwIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0idXJsKCNncmlkKSIvPgogIDxnIHN0cm9rZT0iI2ZmNjYwMCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2Utb3BhY2l0eT0iMC4yNSIgZmlsbD0ibm9uZSI+CiAgICA8cGF0aCBkPSJNMTAwIDUwMCBMMzUwIDUwMCBMMzUwIDQyMCBMNDgwIDQyMCBMNDgwIDM0MCBMNjEwIDM0MCBMNjEwIDI2MCBMNzQwIDI2MCBMNzQwIDE4MCBMMTEwMCAxODAiLz4KICAgIDxwYXRoIGQ9Ik0xMDAgNTQwIEwzOTAgNTQwIEwzOTAgNDYwIEw1MjAgNDYwIEw1MjAgMzgwIEw2NTAgMzgwIEw2NTAgMzAwIEw3ODAgMzAwIEw3ODAgMjIwIEwxMTAwIDIyMCIvPgogICAgPGxpbmUgeDE9IjM1MCIgeTE9IjQyMCIgeDI9IjM1MCIgeTI9IjI4MCIvPgogICAgPGxpbmUgeDE9IjQ4MCIgeTE9IjM0MCIgeDI9IjQ4MCIgeTI9IjIwMCIvPgogICAgPGxpbmUgeDE9IjYxMCIgeTE9IjI2MCIgeDI9IjYxMCIgeTI9IjEyMCIvPgogICAgPGxpbmUgeDE9Ijc0MCIgeTE9IjE4MCIgeDI9Ijc0MCIgeTI9IjQwIi8+CiAgICA8bGluZSB4MT0iMzUwIiB5MT0iMjgwIiB4Mj0iNzQwIiB5Mj0iNDAiLz4KICA8L2c+Cjwvc3ZnPg==') no-repeat center center/cover;
+            padding: 180px 5% 100px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #ccc;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        section {
+            padding: 80px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 50px;
+            position: relative;
+            color: var(--dark-color);
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 15px auto 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--light-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .service-info {
+            padding: 25px;
+        }
+
+        .service-info h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: var(--dark-color);
+        }
+
+        .service-info p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .tabs-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .tab-btn {
+            background: none;
+            border: 2px solid #ddd;
+            padding: 10px 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            background-color: var(--dark-color);
+            color: #fff;
+            border-color: var(--dark-color);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 6px;
+            overflow: hidden;
+            height: 280px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+            display: block;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-desc {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(transparent, rgba(0,0,0,0.85));
+            color: #fff;
+            padding: 20px;
+            font-weight: 600;
+        }
+
+        .quiz-section {
+            background-color: var(--light-bg);
+        }
+
+        .quiz-wrapper {
+            max-width: 750px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-container {
+            margin-bottom: 30px;
+        }
+
+        .progress-bar {
+            height: 6px;
+            background-color: #eee;
+            border-radius: 3px;
+            width: 100%;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: var(--primary-color);
+            width: 25%;
+            border-radius: 3px;
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .quiz-step {
+            display: none;
+            opacity: 0;
+            transform: translateX(30px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        .quiz-step.active {
+            display: block;
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .quiz-step.exit {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+
+        .quiz-step h3 {
+            font-size: 22px;
+            margin-bottom: 25px;
+            color: var(--dark-color);
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .option-card {
+            border: 2px solid #eee;
+            border-radius: 6px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .option-card:hover {
+            border-color: #bbb;
+        }
+
+        .option-card input[type="radio"] {
+            display: none;
+        }
+
+        .option-card.selected {
+            border-color: var(--primary-color);
+            background-color: rgba(255,102,0,0.03);
+            color: var(--primary-color);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            border-color: var(--dark-color);
+        }
+
+        .quiz-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .quiz-btn {
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 15px;
+            border: none;
+            transition: var(--transition);
+        }
+
+        .quiz-prev {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+
+        .quiz-prev:hover {
+            background-color: #d0d0d0;
+        }
+
+        .quiz-next {
+            background-color: var(--dark-color);
+            color: #fff;
+            margin-left: auto;
+        }
+
+        .quiz-next:hover {
+            background-color: #000;
+        }
+
+        .quiz-submit {
+            background-color: var(--primary-color);
+            color: #fff;
+            margin-left: auto;
+        }
+
+        .widget-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 2000;
+        }
+
+        .main-widget-btn {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255,102,0,0.4);
+            transition: var(--transition);
+        }
+
+        .widget-sub-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            position: absolute;
+            bottom: 75px;
+            right: 5px;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(15px);
+            transition: var(--transition);
+        }
+
+        .widget-container.open .widget-sub-buttons {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+
+        .sub-btn {
+            padding: 10px 16px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            font-weight: bold;
+        }
+
+        .sub-btn.wa { background-color: #25D366; }
+        .sub-btn.tg { background-color: #0088cc; }
+
+        footer {
+            background-color: var(--dark-color);
+            color: #ccc;
+            padding: 40px 5% 20px;
+            text-align: center;
+            border-top: 3px solid var(--primary-color);
+        }
+
+        .footer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            gap: 20px;
+        }
+
+        .footer-info { text-align: left; }
+        .footer-info h4 { color: #fff; margin-bottom: 10px; font-size: 20px; }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 15px; text-align: center; }
+            nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+            nav a { margin: 0 10px; }
+            .hero h1 { font-size: 32px; }
+            .footer-grid { flex-direction: column; text-align: center; }
+            .footer-info { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Лестничный <span>Хаб</span></div>
+        <nav>
+            <a href="#services">Что делаем</a>
+            <a href="#gallery">Наши работы</a>
+            <a href="#quiz">Расчет стоимости</a>
+        </nav>
+        <div class="header-contacts">
+            <a href="tel:+79006223883" class="phone-btn">8 (900) 622-38-83</a>
+            <a href="#quiz" class="cta-btn">Рассчитать проект</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Заводская сварка конструкций на <span>металлокаркасе</span></h1>
+        <p>Качественная профессиональная электросварка, идеальные швы и точная геометрия. Проектируем и монтируем надежные межэтажные лестницы, уличные крыльца и силовые антресольные этажи с гарантией 10 лет.</p>
+        <a href="#quiz" class="cta-btn" style="padding: 16px 36px; font-size: 18px;">Пройти тест и получить 3D-проект</a>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title">Что мы производим</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzYwIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYXJkQmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlOWVjZWYiLz4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RlZTJlNiIvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPHBhdHRlcm4gaWQ9InNtYWxsR3JpZCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgICAgIDxwYXRoIGQ9Ik0gMjAgMCBMIDAgMCAwIDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgICA8L3BhdHRlcm4+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzNjAiIGZpbGw9InVybCgjY2FyZEJnKSIvPgogICAgICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM2MCIgZmlsbD0idXJsKCNzbWFsbEdyaWQpIi8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjYwIiB5PSIzMjAiIHdpZHRoPSI0ODAiIGhlaWdodD0iMjUiIGZpbGw9IiMyYjMwMzYiLz4KICAgICAgICA8cGF0aCBkPSJNMTIwIDMyMCBMNDYwIDkwIEw0OTUgOTAgTDE1NSAzMjAgWiIgZmlsbD0iIzE4MWIxZSIvPgogICAgICAgIDxnIGZpbGw9IiNjNjhiNTkiIHN0cm9rZT0iIzhhNWEzMiIgc3Ryb2tlLXdpZHRoPSIyIj4KICAgICAgICAgIDxyZWN0IHg9IjEzMCIgeT0iMjk1IiB3aWR0aD0iMTEwIiBoZWlnaHQ9IjE0IiByeD0iMiIvPgogICAgICAgICAgPHJlY3QgeD0iMTg1IiB5PSIyNTUiIHdpZHRoPSIxMTAiIGhlaWdodD0iMTQiIHJ4PSIyIi8+CiAgICAgICAgICA8cmVjdCB4PSIyNDAiIHk9IjIxNSIgd2lkdGg9IjExMCIgaGVpZ2h0PSIxNCIgcng9IjIiLz4KICAgICAgICAgIDxyZWN0IHg9IjI5NSIgeT0iMTc1IiB3aWR0aD0iMTEwIiBoZWlnaHQ9IjE0IiByeD0iMiIvPgogICAgICAgICAgPHJlY3QgeD0iMzUwIiB5PSIxMzUiIHdpZHRoPSIxMTAiIGhlaWdodD0iMTQiIHJ4PSIyIi8+CiAgICAgICAgICA8cmVjdCB4PSI0MDUiIHk9Ijk1IiB3aWR0aD0iMTEwIiBoZWlnaHQ9IjE0IiByeD0iMiIvPgogICAgICAgIDwvZz4KICAgICAgICA8ZyBzdHJva2U9IiMxODFiMWUiIHN0cm9rZS13aWR0aD0iNCI+CiAgICAgICAgICA8bGluZSB4MT0iMTQ1IiB5MT0iMjk1IiB4Mj0iMTQ1IiB5Mj0iMTk1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iMjU1IiB5MT0iMjE1IiB4Mj0iMjU1IiB5Mj0iMTE1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iMzY1IiB5MT0iMTM1IiB4Mj0iMzY1IiB5Mj0iMzUiLz4KICAgICAgICAgIDxsaW5lIHgxPSI0NzUiIHkxPSI5NSIgeDI9IjQ3NSIgeTI9IjE1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iMTM1IiB5MT0iMjAyIiB4Mj0iNDg1IiB5Mj0iMTIiIHN0cm9rZT0iI2ZmNjYwMCIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgICAgICAgPC9nPgogICAgICA8cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSIyMjAiIGhlaWdodD0iMzQiIHJ4PSI0IiBmaWxsPSIjMWExZDIwIiBmaWxsLW9wYWNpdHk9IjAuODgiLz4KICAgICAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMyIgcj0iNSIgZmlsbD0iI2ZmNjYwMCIvPgogICAgICA8dGV4dCB4PSI0NiIgeT0iMzgiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmZmZmZmIj7QnNCV0KLQkNCb0JvQntCa0JDQoNCa0JDQoSDQm9Ce0KTQojwvdGV4dD4KICAgICAgPHRleHQgeD0iNTgwIiB5PSIzNDYiIHRleHQtYW5jaG9yPSJlbmQiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiM0OTUwNTciPtCh0YLQsNC70YwgNC04INC80Lwg4oCiINCf0L7RgNC+0YjQutC+0LLQsNGPINC+0LrRgNCw0YHQutCwPC90ZXh0PgogICAgPC9zdmc+" alt="Лестницы на второй этаж" class="service-img">
+                <div class="service-info">
+                    <h3>Лестницы на второй этаж</h3>
+                    <p>Изготовление открытых и закрытых каркасов: монокосоуры, ломаные косоуры, конструкции под полную зашивку деревом. Идеальная геометрия без скрипов.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzYwIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYXJkQmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlOWVjZWYiLz4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RlZTJlNiIvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPHBhdHRlcm4gaWQ9InNtYWxsR3JpZCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgICAgIDxwYXRoIGQ9Ik0gMjAgMCBMIDAgMCAwIDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgICA8L3BhdHRlcm4+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzNjAiIGZpbGw9InVybCgjY2FyZEJnKSIvPgogICAgICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM2MCIgZmlsbD0idXJsKCNzbWFsbEdyaWQpIi8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjQwIiB5PSIzMjAiIHdpZHRoPSI1MjAiIGhlaWdodD0iMzAiIGZpbGw9IiMzYTNmNDUiLz4KICAgICAgICA8cmVjdCB4PSIzNDAiIHk9IjYwIiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjI2MCIgZmlsbD0iIzJjMzEzNyIvPgogICAgICAgIDxyZWN0IHg9IjM4MCIgeT0iOTUiIHdpZHRoPSIxMTAiIGhlaWdodD0iMjI1IiBmaWxsPSIjMTgxYjFlIiBzdHJva2U9IiNmZjY2MDAiIHN0cm9rZS13aWR0aD0iMyIvPgogICAgICAgIDxnIGZpbGw9IiMyMjI2MmEiIHN0cm9rZT0iIzExMSIgc3Ryb2tlLXdpZHRoPSIyIj4KICAgICAgICAgIDxyZWN0IHg9IjE0MCIgeT0iMjkwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjMwIi8+CiAgICAgICAgICA8cmVjdCB4PSIxOTAiIHk9IjI2MCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzMCIvPgogICAgICAgICAgPHJlY3QgeD0iMjQwIiB5PSIyMzAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMzAiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGcgZmlsbD0iI2I1N2M0YSI+CiAgICAgICAgICA8cmVjdCB4PSIxMzUiIHk9IjI4NCIgd2lkdGg9IjIwNSIgaGVpZ2h0PSI4Ii8+CiAgICAgICAgICA8cmVjdCB4PSIxODUiIHk9IjI1NCIgd2lkdGg9IjE1NSIgaGVpZ2h0PSI4Ii8+CiAgICAgICAgICA8cmVjdCB4PSIyMzUiIHk9IjIyNCIgd2lkdGg9IjEwNSIgaGVpZ2h0PSI4Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnIHN0cm9rZT0iIzE0MTcxYSIgc3Ryb2tlLXdpZHRoPSI0Ij4KICAgICAgICAgIDxsaW5lIHgxPSIxNTAiIHkxPSIyODQiIHgyPSIxNTAiIHkyPSIxOTAiLz4KICAgICAgICAgIDxsaW5lIHgxPSIyNDUiIHkxPSIyMjQiIHgyPSIyNDUiIHkyPSIxMzAiLz4KICAgICAgICAgIDxsaW5lIHgxPSIzMzAiIHkxPSIyMjQiIHgyPSIzMzAiIHkyPSIxMzAiLz4KICAgICAgICAgIDxsaW5lIHgxPSIxNDAiIHkxPSIxOTYiIHgyPSIzNDAiIHkyPSIxMzAiIHN0cm9rZT0iI2ZmNjYwMCIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgICAgICAgPC9nPgogICAgICA8cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSIyMjAiIGhlaWdodD0iMzQiIHJ4PSI0IiBmaWxsPSIjMWExZDIwIiBmaWxsLW9wYWNpdHk9IjAuODgiLz4KICAgICAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMyIgcj0iNSIgZmlsbD0iI2ZmNjYwMCIvPgogICAgICA8dGV4dCB4PSI0NiIgeT0iMzgiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmZmZmZmIj7QktCl0J7QlNCd0KvQlSDQk9Cg0KPQn9Cf0Ks8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjU4MCIgeT0iMzQ2IiB0ZXh0LWFuY2hvcj0iZW5kIiBmb250LWZhbWlseT0iU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjNDk1MDU3Ij7QkNC90YLQuNC60L7RgNGA0L7Qt9C40LnQvdGL0Lkg0LPRgNGD0L3RgiDigKIg0J3QsNGB0YLQuNC7INCU0J/QmjwvdGV4dD4KICAgIDwvc3ZnPg==" alt="Входные крыльца к дому" class="service-img">
+                <div class="service-info">
+                    <h3>Уличные крыльца</h3>
+                    <p>Надежные входные группы и лестницы для частных домов и коммерческих зданий. Обработка антикоррозийным грунтом и порошковая покраска.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzYwIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYXJkQmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlOWVjZWYiLz4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RlZTJlNiIvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPHBhdHRlcm4gaWQ9InNtYWxsR3JpZCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgICAgIDxwYXRoIGQ9Ik0gMjAgMCBMIDAgMCAwIDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgICA8L3BhdHRlcm4+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzNjAiIGZpbGw9InVybCgjY2FyZEJnKSIvPgogICAgICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM2MCIgZmlsbD0idXJsKCNzbWFsbEdyaWQpIi8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjQwIiB5PSIzMjAiIHdpZHRoPSI1MjAiIGhlaWdodD0iMjUiIGZpbGw9IiMyYzMxMzciLz4KICAgICAgICA8cmVjdCB4PSI2MCIgeT0iMTU1IiB3aWR0aD0iNDgwIiBoZWlnaHQ9IjIyIiBmaWxsPSIjMTgxYjFlIi8+CiAgICAgICAgPHJlY3QgeD0iNjAiIHk9IjE0OCIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI3IiBmaWxsPSIjYzY4YjU5Ii8+CiAgICAgICAgPHJlY3QgeD0iOTAiIHk9IjE3NyIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE0MyIgZmlsbD0iIzE4MWIxZSIvPgogICAgICAgIDxyZWN0IHg9IjQ5MCIgeT0iMTc3IiB3aWR0aD0iMTgiIGhlaWdodD0iMTQzIiBmaWxsPSIjMTgxYjFlIi8+CiAgICAgICAgPGcgc3Ryb2tlPSIjMTgxYjFlIiBzdHJva2Utd2lkdGg9IjMiPgogICAgICAgICAgPGxpbmUgeDE9IjgwIiB5MT0iMTQ4IiB4Mj0iODAiIHkyPSI3NSIvPgogICAgICAgICAgPGxpbmUgeDE9IjE2MCIgeTE9IjE0OCIgeDI9IjE2MCIgeTI9Ijc1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iMjQwIiB5MT0iMTQ4IiB4Mj0iMjQwIiB5Mj0iNzUiLz4KICAgICAgICAgIDxsaW5lIHgxPSIzMjAiIHkxPSIxNDgiIHgyPSIzMjAiIHkyPSI3NSIvPgogICAgICAgICAgPGxpbmUgeDE9IjQwMCIgeTE9IjE0OCIgeDI9IjQwMCIgeTI9Ijc1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iNDgwIiB5MT0iMTQ4IiB4Mj0iNDgwIiB5Mj0iNzUiLz4KICAgICAgICAgIDxsaW5lIHgxPSI3MCIgeTE9Ijc1IiB4Mj0iNDkwIiB5Mj0iNzUiIHN0cm9rZT0iI2ZmNjYwMCIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxwYXRoIGQ9Ik0zNTAgMzIwIEw0NzAgMTU1IEw0OTAgMTU1IEwzNzAgMzIwIFoiIGZpbGw9IiMxODFiMWUiLz4KICAgICAgICA8ZyBmaWxsPSIjYzY4YjU5Ij4KICAgICAgICAgIDxyZWN0IHg9IjM2MCIgeT0iMjg1IiB3aWR0aD0iNjAiIGhlaWdodD0iOCIvPgogICAgICAgICAgPHJlY3QgeD0iMzg1IiB5PSIyNTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSI4Ii8+CiAgICAgICAgICA8cmVjdCB4PSI0MTAiIHk9IjIxNSIgd2lkdGg9IjYwIiBoZWlnaHQ9IjgiLz4KICAgICAgICAgIDxyZWN0IHg9IjQzNSIgeT0iMTgwIiB3aWR0aD0iNjAiIGhlaWdodD0iOCIvPgogICAgICAgIDwvZz4KICAgICAgPHJlY3QgeD0iMTYiIHk9IjE2IiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjM0IiByeD0iNCIgZmlsbD0iIzFhMWQyMCIgZmlsbC1vcGFjaXR5PSIwLjg4Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjMyIiBjeT0iMzMiIHI9IjUiIGZpbGw9IiNmZjY2MDAiLz4KICAgICAgPHRleHQgeD0iNDYiIHk9IjM4IiBmb250LWZhbWlseT0iU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZmZmZiI+0JDQndCi0KDQldCh0J7Qm9Cs0J3Qq9CVINCt0KLQkNCW0Jg8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjU4MCIgeT0iMzQ2IiB0ZXh0LWFuY2hvcj0iZW5kIiBmb250LWZhbWlseT0iU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjNDk1MDU3Ij7QlNCy0YPRgtCw0LLRgCDQuCDQv9GA0L7RhNC40LvRjNC90LDRjyDRgtGA0YPQsdCwIOKAoiDQoNCw0YHRh9C10YIg0L3QsNCz0YDRg9C30L7QujwvdGV4dD4KICAgIDwvc3ZnPg==" alt="Антресольные этажи" class="service-img">
+                <div class="service-info">
+                    <h3>Антресольные этажи</h3>
+                    <p>Возведение прочных вторых полуэтажей в квартирах с высокими потолками, студиях и офисах. Увеличивают полезную жилую площадь до 70%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 class="section-title">Выполненные объекты</h2>
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="filterGallery(event, 'all')">Все конструкции</button>
+            <button class="tab-btn" onclick="filterGallery(event, 'stairs')">Лестницы</button>
+            <button class="tab-btn" onclick="filterGallery(event, 'porch')">Крыльца</button>
+            <button class="tab-btn" onclick="filterGallery(event, 'mezzanine')">Антресоли</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-cat="stairs">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzYwIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYXJkQmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlOWVjZWYiLz4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RlZTJlNiIvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPHBhdHRlcm4gaWQ9InNtYWxsR3JpZCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgICAgIDxwYXRoIGQ9Ik0gMjAgMCBMIDAgMCAwIDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgICA8L3BhdHRlcm4+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzNjAiIGZpbGw9InVybCgjY2FyZEJnKSIvPgogICAgICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM2MCIgZmlsbD0idXJsKCNzbWFsbEdyaWQpIi8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjYwIiB5PSIzMjAiIHdpZHRoPSI0ODAiIGhlaWdodD0iMjUiIGZpbGw9IiMyYjMwMzYiLz4KICAgICAgICA8cGF0aCBkPSJNMTIwIDMyMCBMNDYwIDkwIEw0OTUgOTAgTDE1NSAzMjAgWiIgZmlsbD0iIzE4MWIxZSIvPgogICAgICAgIDxnIGZpbGw9IiNjNjhiNTkiIHN0cm9rZT0iIzhhNWEzMiIgc3Ryb2tlLXdpZHRoPSIyIj4KICAgICAgICAgIDxyZWN0IHg9IjEzMCIgeT0iMjk1IiB3aWR0aD0iMTEwIiBoZWlnaHQ9IjE0IiByeD0iMiIvPgogICAgICAgICAgPHJlY3QgeD0iMTg1IiB5PSIyNTUiIHdpZHRoPSIxMTAiIGhlaWdodD0iMTQiIHJ4PSIyIi8+CiAgICAgICAgICA8cmVjdCB4PSIyNDAiIHk9IjIxNSIgd2lkdGg9IjExMCIgaGVpZ2h0PSIxNCIgcng9IjIiLz4KICAgICAgICAgIDxyZWN0IHg9IjI5NSIgeT0iMTc1IiB3aWR0aD0iMTEwIiBoZWlnaHQ9IjE0IiByeD0iMiIvPgogICAgICAgICAgPHJlY3QgeD0iMzUwIiB5PSIxMzUiIHdpZHRoPSIxMTAiIGhlaWdodD0iMTQiIHJ4PSIyIi8+CiAgICAgICAgICA8cmVjdCB4PSI0MDUiIHk9Ijk1IiB3aWR0aD0iMTEwIiBoZWlnaHQ9IjE0IiByeD0iMiIvPgogICAgICAgIDwvZz4KICAgICAgICA8ZyBzdHJva2U9IiMxODFiMWUiIHN0cm9rZS13aWR0aD0iNCI+CiAgICAgICAgICA8bGluZSB4MT0iMTQ1IiB5MT0iMjk1IiB4Mj0iMTQ1IiB5Mj0iMTk1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iMjU1IiB5MT0iMjE1IiB4Mj0iMjU1IiB5Mj0iMTE1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iMzY1IiB5MT0iMTM1IiB4Mj0iMzY1IiB5Mj0iMzUiLz4KICAgICAgICAgIDxsaW5lIHgxPSI0NzUiIHkxPSI5NSIgeDI9IjQ3NSIgeTI9IjE1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iMTM1IiB5MT0iMjAyIiB4Mj0iNDg1IiB5Mj0iMTIiIHN0cm9rZT0iI2ZmNjYwMCIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgICAgICAgPC9nPgogICAgICA8cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSIyMjAiIGhlaWdodD0iMzQiIHJ4PSI0IiBmaWxsPSIjMWExZDIwIiBmaWxsLW9wYWNpdHk9IjAuODgiLz4KICAgICAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMyIgcj0iNSIgZmlsbD0iI2ZmNjYwMCIvPgogICAgICA8dGV4dCB4PSI0NiIgeT0iMzgiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmZmZmZmIj7QnNCe0J3QntCa0J7QodCe0KPQoDwvdGV4dD4KICAgICAgPHRleHQgeD0iNTgwIiB5PSIzNDYiIHRleHQtYW5jaG9yPSJlbmQiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiM0OTUwNTciPtCh0YLRg9C/0LXQvdC4INC80LDRgdGB0LjQsiDQtNGD0LHQsCA0MCDQvNC8PC90ZXh0PgogICAgPC9zdmc+" alt="Лестница лофт">
+                <div class="gallery-desc">Лестница на монокосоуре в частном доме</div>
+            </div>
+            <div class="gallery-item" data-cat="stairs">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzYwIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYXJkQmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlOWVjZWYiLz4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RlZTJlNiIvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPHBhdHRlcm4gaWQ9InNtYWxsR3JpZCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgICAgIDxwYXRoIGQ9Ik0gMjAgMCBMIDAgMCAwIDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgICA8L3BhdHRlcm4+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzNjAiIGZpbGw9InVybCgjY2FyZEJnKSIvPgogICAgICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM2MCIgZmlsbD0idXJsKCNzbWFsbEdyaWQpIi8+CiAgICAgIAogICAgICAgIDxwYXRoIGQ9Ik0xMDAgMzIwIEwxMDAgMjgwIEwxNjAgMjgwIEwxNjAgMjQwIEwyMjAgMjQwIEwyMjAgMjAwIEwyODAgMjAwIEwyODAgMTYwIEwzNDAgMTYwIEwzNDAgMTIwIEw0MDAgMTIwIEw0MDAgODAgTDQ4MCA4MCBMNDgwIDEwNSBMNDI1IDEwNSBMNDI1IDE0NSBMMzY1IDE0NSBMMzY1IDE4NSBMMzA1IDE4NSBMMzA1IDIyNSBMMjQ1IDIyNSBMMjQ1IDI2NSBMMTg1IDI2NSBMMTg1IDMwNSBMMTI1IDMwNSBMMTI1IDMyMCBaIiBmaWxsPSIjMTgxYjFlIi8+CiAgICAgICAgPGcgZmlsbD0iI2Q0OWI2YSI+CiAgICAgICAgICA8cmVjdCB4PSI5NSIgeT0iMjcyIiB3aWR0aD0iNzUiIGhlaWdodD0iOSIgcng9IjIiLz4KICAgICAgICAgIDxyZWN0IHg9IjE1NSIgeT0iMjMyIiB3aWR0aD0iNzUiIGhlaWdodD0iOSIgcng9IjIiLz4KICAgICAgICAgIDxyZWN0IHg9IjIxNSIgeT0iMTkyIiB3aWR0aD0iNzUiIGhlaWdodD0iOSIgcng9IjIiLz4KICAgICAgICAgIDxyZWN0IHg9IjI3NSIgeT0iMTUyIiB3aWR0aD0iNzUiIGhlaWdodD0iOSIgcng9IjIiLz4KICAgICAgICAgIDxyZWN0IHg9IjMzNSIgeT0iMTEyIiB3aWR0aD0iNzUiIGhlaWdodD0iOSIgcng9IjIiLz4KICAgICAgICAgIDxyZWN0IHg9IjM5NSIgeT0iNzIiIHdpZHRoPSI5MCIgaGVpZ2h0PSI5IiByeD0iMiIvPgogICAgICAgIDwvZz4KICAgICAgICA8bGluZSB4MT0iMTEwIiB5MT0iMjcyIiB4Mj0iMTEwIiB5Mj0iMTgwIiBzdHJva2U9IiMxODFiMWUiIHN0cm9rZS13aWR0aD0iNCIvPgogICAgICAgIDxsaW5lIHgxPSIyOTAiIHkxPSIxNTIiIHgyPSIyOTAiIHkyPSI2MCIgc3Ryb2tlPSIjMTgxYjFlIiBzdHJva2Utd2lkdGg9IjQiLz4KICAgICAgICA8bGluZSB4MT0iNDYwIiB5MT0iNzIiIHgyPSI0NjAiIHkyPSIxNSIgc3Ryb2tlPSIjMTgxYjFlIiBzdHJva2Utd2lkdGg9IjQiLz4KICAgICAgICA8bGluZSB4MT0iMTAwIiB5MT0iMTg1IiB4Mj0iNDcwIiB5Mj0iMTUiIHN0cm9rZT0iI2ZmNjYwMCIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgICAgIDxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjIyMCIgaGVpZ2h0PSIzNCIgcng9IjQiIGZpbGw9IiMxYTFkMjAiIGZpbGwtb3BhY2l0eT0iMC44OCIvPgogICAgICA8Y2lyY2xlIGN4PSIzMiIgY3k9IjMzIiByPSI1IiBmaWxsPSIjZmY2NjAwIi8+CiAgICAgIDx0ZXh0IHg9IjQ2IiB5PSIzOCIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZmZmZmYiPtCb0J7QnNCQ0J3Qq9CZINCa0J7QodCe0KPQoDwvdGV4dD4KICAgICAgPHRleHQgeD0iNTgwIiB5PSIzNDYiIHRleHQtYW5jaG9yPSJlbmQiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiM0OTUwNTciPlot0L7QsdGA0LDQt9C90YvQuSDQv9GA0L7RhNC40LvRjCDigKIg0J7Qs9GA0LDQttC00LXQvdC40LUg0YDQuNCz0LXQu9GMPC90ZXh0PgogICAgPC9zdmc+" alt="Ломаный косоур">
+                <div class="gallery-desc">Лестница на ломаном косоуре в стиле лофт</div>
+            </div>
+            <div class="gallery-item" data-cat="porch">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzYwIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYXJkQmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlOWVjZWYiLz4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RlZTJlNiIvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPHBhdHRlcm4gaWQ9InNtYWxsR3JpZCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgICAgIDxwYXRoIGQ9Ik0gMjAgMCBMIDAgMCAwIDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgICA8L3BhdHRlcm4+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzNjAiIGZpbGw9InVybCgjY2FyZEJnKSIvPgogICAgICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM2MCIgZmlsbD0idXJsKCNzbWFsbEdyaWQpIi8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjQwIiB5PSIzMjAiIHdpZHRoPSI1MjAiIGhlaWdodD0iMzAiIGZpbGw9IiMzYTNmNDUiLz4KICAgICAgICA8cmVjdCB4PSIzNDAiIHk9IjYwIiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjI2MCIgZmlsbD0iIzJjMzEzNyIvPgogICAgICAgIDxyZWN0IHg9IjM4MCIgeT0iOTUiIHdpZHRoPSIxMTAiIGhlaWdodD0iMjI1IiBmaWxsPSIjMTgxYjFlIiBzdHJva2U9IiNmZjY2MDAiIHN0cm9rZS13aWR0aD0iMyIvPgogICAgICAgIDxnIGZpbGw9IiMyMjI2MmEiIHN0cm9rZT0iIzExMSIgc3Ryb2tlLXdpZHRoPSIyIj4KICAgICAgICAgIDxyZWN0IHg9IjE0MCIgeT0iMjkwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjMwIi8+CiAgICAgICAgICA8cmVjdCB4PSIxOTAiIHk9IjI2MCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzMCIvPgogICAgICAgICAgPHJlY3QgeD0iMjQwIiB5PSIyMzAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMzAiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGcgZmlsbD0iI2I1N2M0YSI+CiAgICAgICAgICA8cmVjdCB4PSIxMzUiIHk9IjI4NCIgd2lkdGg9IjIwNSIgaGVpZ2h0PSI4Ii8+CiAgICAgICAgICA8cmVjdCB4PSIxODUiIHk9IjI1NCIgd2lkdGg9IjE1NSIgaGVpZ2h0PSI4Ii8+CiAgICAgICAgICA8cmVjdCB4PSIyMzUiIHk9IjIyNCIgd2lkdGg9IjEwNSIgaGVpZ2h0PSI4Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnIHN0cm9rZT0iIzE0MTcxYSIgc3Ryb2tlLXdpZHRoPSI0Ij4KICAgICAgICAgIDxsaW5lIHgxPSIxNTAiIHkxPSIyODQiIHgyPSIxNTAiIHkyPSIxOTAiLz4KICAgICAgICAgIDxsaW5lIHgxPSIyNDUiIHkxPSIyMjQiIHgyPSIyNDUiIHkyPSIxMzAiLz4KICAgICAgICAgIDxsaW5lIHgxPSIzMzAiIHkxPSIyMjQiIHgyPSIzMzAiIHkyPSIxMzAiLz4KICAgICAgICAgIDxsaW5lIHgxPSIxNDAiIHkxPSIxOTYiIHgyPSIzNDAiIHkyPSIxMzAiIHN0cm9rZT0iI2ZmNjYwMCIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgICAgICAgPC9nPgogICAgICA8cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSIyMjAiIGhlaWdodD0iMzQiIHJ4PSI0IiBmaWxsPSIjMWExZDIwIiBmaWxsLW9wYWNpdHk9IjAuODgiLz4KICAgICAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMyIgcj0iNSIgZmlsbD0iI2ZmNjYwMCIvPgogICAgICA8dGV4dCB4PSI0NiIgeT0iMzgiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmZmZmZmIj7QmtCg0KvQm9Cs0KbQniDQoSDQn9Cb0J7QqdCQ0JTQmtCe0Jk8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjU4MCIgeT0iMzQ2IiB0ZXh0LWFuY2hvcj0iZW5kIiBmb250LWZhbWlseT0iU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjNDk1MDU3Ij7QktGF0L7QtNC90LDRjyDQs9GA0YPQv9C/0LAg0YEg0L/QtdGA0LjQu9Cw0LzQuDwvdGV4dD4KICAgIDwvc3ZnPg==" alt="Крыльцо к дому">
+                <div class="gallery-desc">Входная группа из металла с деревянной отделкой</div>
+            </div>
+            <div class="gallery-item" data-cat="porch">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzYwIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYXJkQmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlOWVjZWYiLz4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RlZTJlNiIvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPHBhdHRlcm4gaWQ9InNtYWxsR3JpZCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgICAgIDxwYXRoIGQ9Ik0gMjAgMCBMIDAgMCAwIDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgICA8L3BhdHRlcm4+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzNjAiIGZpbGw9InVybCgjY2FyZEJnKSIvPgogICAgICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM2MCIgZmlsbD0idXJsKCNzbWFsbEdyaWQpIi8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjUwIiB5PSIzMTAiIHdpZHRoPSI1MDAiIGhlaWdodD0iMzAiIGZpbGw9IiMyZDMyMzgiLz4KICAgICAgICA8cG9seWdvbiBwb2ludHM9IjEyMCwxMjAgMzAwLDUwIDQ4MCwxMjAiIGZpbGw9IiMxODFiMWUiIHN0cm9rZT0iI2ZmNjYwMCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgICAgICAgPHJlY3QgeD0iMTUwIiB5PSIxMjAiIHdpZHRoPSIxMiIgaGVpZ2h0PSIxOTAiIGZpbGw9IiMxODFiMWUiLz4KICAgICAgICA8cmVjdCB4PSI0MzgiIHk9IjEyMCIgd2lkdGg9IjEyIiBoZWlnaHQ9IjE5MCIgZmlsbD0iIzE4MWIxZSIvPgogICAgICAgIDxyZWN0IHg9IjE1MCIgeT0iMjUwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjMjIyNjJhIi8+CiAgICAgICAgPHJlY3QgeD0iMTQ1IiB5PSIyNDIiIHdpZHRoPSIzMTAiIGhlaWdodD0iMTAiIGZpbGw9IiNiNTdjNGEiLz4KICAgICAgICA8ZyBzdHJva2U9IiMxODFiMWUiIHN0cm9rZS13aWR0aD0iMyI+CiAgICAgICAgICA8bGluZSB4MT0iMTkwIiB5MT0iMjQyIiB4Mj0iMTkwIiB5Mj0iMTg1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iMjMwIiB5MT0iMjQyIiB4Mj0iMjMwIiB5Mj0iMTg1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iMjcwIiB5MT0iMjQyIiB4Mj0iMjcwIiB5Mj0iMTg1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iMzMwIiB5MT0iMjQyIiB4Mj0iMzMwIiB5Mj0iMTg1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iMzcwIiB5MT0iMjQyIiB4Mj0iMzcwIiB5Mj0iMTg1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iNDEwIiB5MT0iMjQyIiB4Mj0iNDEwIiB5Mj0iMTg1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iMTUwIiB5MT0iMTg1IiB4Mj0iNDUwIiB5Mj0iMTg1IiBzdHJva2U9IiNmZjY2MDAiIHN0cm9rZS13aWR0aD0iNCIvPgogICAgICAgIDwvZz4KICAgICAgPHJlY3QgeD0iMTYiIHk9IjE2IiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjM0IiByeD0iNCIgZmlsbD0iIzFhMWQyMCIgZmlsbC1vcGFjaXR5PSIwLjg4Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjMyIiBjeT0iMzMiIHI9IjUiIGZpbGw9IiNmZjY2MDAiLz4KICAgICAgPHRleHQgeD0iNDYiIHk9IjM4IiBmb250LWZhbWlseT0iU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZmZmZiI+0JrQoNCr0JvQrNCm0J4g0J/QntCUINCd0JDQktCV0KHQntCcPC90ZXh0PgogICAgICA8dGV4dCB4PSI1ODAiIHk9IjM0NiIgdGV4dC1hbmNob3I9ImVuZCIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0iIzQ5NTA1NyI+0JzQtdGC0LDQu9C70L7QutCw0YDQutCw0YEgKyDRgtC10YDRgNCw0YHQvdCw0Y8g0LTQvtGB0LrQsDwvdGV4dD4KICAgIDwvc3ZnPg==" alt="Уличная лестница">
+                <div class="gallery-desc">Металлическое крыльцо с навесом под ДПК-настил</div>
+            </div>
+            <div class="gallery-item" data-cat="mezzanine">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzYwIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYXJkQmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlOWVjZWYiLz4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RlZTJlNiIvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPHBhdHRlcm4gaWQ9InNtYWxsR3JpZCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgICAgIDxwYXRoIGQ9Ik0gMjAgMCBMIDAgMCAwIDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgICA8L3BhdHRlcm4+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzNjAiIGZpbGw9InVybCgjY2FyZEJnKSIvPgogICAgICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM2MCIgZmlsbD0idXJsKCNzbWFsbEdyaWQpIi8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjQwIiB5PSIzMjAiIHdpZHRoPSI1MjAiIGhlaWdodD0iMjUiIGZpbGw9IiMyYzMxMzciLz4KICAgICAgICA8cmVjdCB4PSI2MCIgeT0iMTU1IiB3aWR0aD0iNDgwIiBoZWlnaHQ9IjIyIiBmaWxsPSIjMTgxYjFlIi8+CiAgICAgICAgPHJlY3QgeD0iNjAiIHk9IjE0OCIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI3IiBmaWxsPSIjYzY4YjU5Ii8+CiAgICAgICAgPHJlY3QgeD0iOTAiIHk9IjE3NyIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE0MyIgZmlsbD0iIzE4MWIxZSIvPgogICAgICAgIDxyZWN0IHg9IjQ5MCIgeT0iMTc3IiB3aWR0aD0iMTgiIGhlaWdodD0iMTQzIiBmaWxsPSIjMTgxYjFlIi8+CiAgICAgICAgPGcgc3Ryb2tlPSIjMTgxYjFlIiBzdHJva2Utd2lkdGg9IjMiPgogICAgICAgICAgPGxpbmUgeDE9IjgwIiB5MT0iMTQ4IiB4Mj0iODAiIHkyPSI3NSIvPgogICAgICAgICAgPGxpbmUgeDE9IjE2MCIgeTE9IjE0OCIgeDI9IjE2MCIgeTI9Ijc1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iMjQwIiB5MT0iMTQ4IiB4Mj0iMjQwIiB5Mj0iNzUiLz4KICAgICAgICAgIDxsaW5lIHgxPSIzMjAiIHkxPSIxNDgiIHgyPSIzMjAiIHkyPSI3NSIvPgogICAgICAgICAgPGxpbmUgeDE9IjQwMCIgeTE9IjE0OCIgeDI9IjQwMCIgeTI9Ijc1Ii8+CiAgICAgICAgICA8bGluZSB4MT0iNDgwIiB5MT0iMTQ4IiB4Mj0iNDgwIiB5Mj0iNzUiLz4KICAgICAgICAgIDxsaW5lIHgxPSI3MCIgeTE9Ijc1IiB4Mj0iNDkwIiB5Mj0iNzUiIHN0cm9rZT0iI2ZmNjYwMCIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxwYXRoIGQ9Ik0zNTAgMzIwIEw0NzAgMTU1IEw0OTAgMTU1IEwzNzAgMzIwIFoiIGZpbGw9IiMxODFiMWUiLz4KICAgICAgICA8ZyBmaWxsPSIjYzY4YjU5Ij4KICAgICAgICAgIDxyZWN0IHg9IjM2MCIgeT0iMjg1IiB3aWR0aD0iNjAiIGhlaWdodD0iOCIvPgogICAgICAgICAgPHJlY3QgeD0iMzg1IiB5PSIyNTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSI4Ii8+CiAgICAgICAgICA8cmVjdCB4PSI0MTAiIHk9IjIxNSIgd2lkdGg9IjYwIiBoZWlnaHQ9IjgiLz4KICAgICAgICAgIDxyZWN0IHg9IjQzNSIgeT0iMTgwIiB3aWR0aD0iNjAiIGhlaWdodD0iOCIvPgogICAgICAgIDwvZz4KICAgICAgPHJlY3QgeD0iMTYiIHk9IjE2IiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjM0IiByeD0iNCIgZmlsbD0iIzFhMWQyMCIgZmlsbC1vcGFjaXR5PSIwLjg4Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjMyIiBjeT0iMzMiIHI9IjUiIGZpbGw9IiNmZjY2MDAiLz4KICAgICAgPHRleHQgeD0iNDYiIHk9IjM4IiBmb250LWZhbWlseT0iU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZmZmZiI+0JbQmNCb0JDQryDQkNCd0KLQoNCV0KHQntCb0Kw8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjU4MCIgeT0iMzQ2IiB0ZXh0LWFuY2hvcj0iZW5kIiBmb250LWZhbWlseT0iU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjNDk1MDU3Ij7QktGC0L7RgNC+0Lkg0Y/RgNGD0YEg0LIg0LrQstCw0YDRgtC40YDQtS3RgdGC0YPQtNC40Lg8L3RleHQ+CiAgICA8L3N2Zz4=" alt="Антресольный этаж лофт">
+                <div class="gallery-desc">Жилой антресольный полуэтаж в квартире</div>
+            </div>
+            <div class="gallery-item" data-cat="mezzanine">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzYwIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYXJkQmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlOWVjZWYiLz4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RlZTJlNiIvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPHBhdHRlcm4gaWQ9InNtYWxsR3JpZCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgICAgIDxwYXRoIGQ9Ik0gMjAgMCBMIDAgMCAwIDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgICA8L3BhdHRlcm4+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzNjAiIGZpbGw9InVybCgjY2FyZEJnKSIvPgogICAgICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM2MCIgZmlsbD0idXJsKCNzbWFsbEdyaWQpIi8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjUwIiB5PSIxNDAiIHdpZHRoPSI1MDAiIGhlaWdodD0iMjQiIGZpbGw9IiMxODFiMWUiLz4KICAgICAgICA8cmVjdCB4PSI1MCIgeT0iMTMyIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjgiIGZpbGw9IiNjNjhiNTkiLz4KICAgICAgICA8ZyBzdHJva2U9IiNmZjY2MDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNiw0Ij4KICAgICAgICAgIDxsaW5lIHgxPSI1MCIgeTE9IjE2NCIgeDI9IjU1MCIgeTI9IjE2NCIvPgogICAgICAgICAgPGxpbmUgeDE9IjE1MCIgeTE9IjE2NCIgeDI9IjE1MCIgeTI9IjMyMCIvPgogICAgICAgICAgPGxpbmUgeDE9IjMwMCIgeTE9IjE2NCIgeDI9IjMwMCIgeTI9IjMyMCIvPgogICAgICAgICAgPGxpbmUgeDE9IjQ1MCIgeTE9IjE2NCIgeDI9IjQ1MCIgeTI9IjMyMCIvPgogICAgICAgIDwvZz4KICAgICAgICA8cmVjdCB4PSIxNDIiIHk9IjE2NCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE1NiIgZmlsbD0iIzE4MWIxZSIvPgogICAgICAgIDxyZWN0IHg9IjI5MiIgeT0iMTY0IiB3aWR0aD0iMTYiIGhlaWdodD0iMTU2IiBmaWxsPSIjMTgxYjFlIi8+CiAgICAgICAgPHJlY3QgeD0iNDQyIiB5PSIxNjQiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNTYiIGZpbGw9IiMxODFiMWUiLz4KICAgICAgICA8cmVjdCB4PSI1MCIgeT0iMzIwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjMmMzMTM3Ii8+CiAgICAgIDxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjIyMCIgaGVpZ2h0PSIzNCIgcng9IjQiIGZpbGw9IiMxYTFkMjAiIGZpbGwtb3BhY2l0eT0iMC44OCIvPgogICAgICA8Y2lyY2xlIGN4PSIzMiIgY3k9IjMzIiByPSI1IiBmaWxsPSIjZmY2NjAwIi8+CiAgICAgIDx0ZXh0IHg9IjQ2IiB5PSIzOCIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZmZmZmYiPtCh0JjQm9Ce0JLQntCZINCa0JDQoNCa0JDQoTwvdGV4dD4KICAgICAgPHRleHQgeD0iNTgwIiB5PSIzNDYiIHRleHQtYW5jaG9yPSJlbmQiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiM0OTUwNTciPtCd0LXRgdGD0YnQsNGPINGA0LDQvNCwINC/0LXRgNC10LrRgNGL0YLQuNGPINC/0L7QtCDRgdC/0LDQu9GM0L3RjjwvdGV4dD4KICAgIDwvc3ZnPg==" alt="Каркас антресоли">
+                <div class="gallery-desc">Силовой каркас антресольного этажа под спальню</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz" class="quiz-section">
+        <h2 class="section-title">Рассчитайте точную стоимость за 1 минуту</h2>
+        <div class="quiz-wrapper">
+            <div class="progress-container">
+                <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            </div>
+
+            <form action="https://formspree.io/f/xooxzaap" method="POST" id="quizForm">
+                <div class="quiz-step active" id="step1">
+                    <h3>1. Какая конструкция вам необходима?</h3>
+                    <div class="options-grid">
+                        <div class="option-card" onclick="selectOption(this, 'step1', 'Тип: Межэтажная лестница')">
+                            <input type="radio" name="Тип конструкции" value="Межэтажная лестница"> Межэтажная лестница
+                        </div>
+                        <div class="option-card" onclick="selectOption(this, 'step1', 'Тип: Уличное крыльцо')">
+                            <input type="radio" name="Тип конструкции" value="Уличное крыльцо"> Уличное крыльцо
+                        </div>
+                        <div class="option-card" onclick="selectOption(this, 'step1', 'Тип: Антресольный этаж')">
+                            <input type="radio" name="Тип конструкции" value="Антресольный этаж"> Антресольный этаж
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-step" id="step2">
+                    <h3>2. Какой стиль исполнения каркаса вам подходит?</h3>
+                    <div class="options-grid">
+                        <div class="option-card" onclick="selectOption(this, 'step2', 'Стиль: Монокосоур (Воздушный)')">
+                            <input type="radio" name="Стиль каркаса" value="Монокосоур (Воздушный)"> Центральный монокосоур
+                        </div>
+                        <div class="option-card" onclick="selectOption(this, 'step2', 'Стиль: Ломаный косоур')">
+                            <input type="radio" name="Стиль каркаса" value="Ломаный косоур"> Ломаный косоур (Z-дизайн)
+                        </div>
+                        <div class="option-card" onclick="selectOption(this, 'step2', 'Стиль: Закрытый под зашивку')">
+                            <input type="radio" name="Стиль каркаса" value="Закрытый под зашивку"> Закрытый тип (под обшивку)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-step" id="step3">
+                    <h3>3. Требуется ли чистовая отделка ступенями / настилом?</h3>
+                    <div class="options-grid">
+                        <div class="option-card" onclick="selectOption(this, 'step3', 'Отделка: Только металлокаркас')">
+                            <input type="radio" name="Отделка ступеней" value="Только металлокаркас"> Нет, только чистый металлокаркас
+                        </div>
+                        <div class="option-card" onclick="selectOption(this, 'step3', 'Отделка: Твердые породы (Дуб/Ясень)')">
+                            <input type="radio" name="Отделка ступеней" value="Твердые породы (Дуб/Ясень)"> Да, массив дерева
+                        </div>
+                        <div class="option-card" onclick="selectOption(this, 'step3', 'Отделка: Террасная доска ДПК')">
+                            <input type="radio" name="Отделка ступеней" value="Террасная доска ДПК"> Да, уличный ДПК-настил
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-step" id="step4">
+                    <h3>4. Куда направить предварительную смету проекта и каталог?</h3>
+                    <div class="form-group">
+                        <input type="text" name="Имя клиента" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="Телефон" placeholder="Номер телефона" required>
+                    </div>
+                    <input type="hidden" name="_replyto" value="Metallmaster.78@yandex.ru">
+                    <input type="hidden" name="Сводка квиза" id="quizSummary">
+                </div>
+
+                <div class="quiz-nav">
+                    <button type="button" class="quiz-btn quiz-prev" id="prevBtn" onclick="changeStep(-1)" style="display:none;">Назад</button>
+                    <button type="button" class="quiz-btn quiz-next" id="nextBtn" onclick="changeStep(1)">Далее</button>
+                    <button type="submit" class="quiz-btn quiz-submit" id="submitBtn" style="display:none;">Получить смету</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="widget-container" id="contactWidget">
+        <div class="main-widget-btn" onclick="toggleWidget()">💬</div>
+        <div class="widget-sub-buttons">
+            <a href="https://wa.me/79006223883?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83%20%D1%80%D0%B0%D1%81%D1%87%D0%B5%D1%82%D0%B0%20%D0%BB%D0%B5%D1%81%D1%82%D0%BD%D0%B8%D1%86%D1%8B." class="sub-btn wa" target="_blank">WhatsApp</a>
+            <a href="https://t.me/+79006223883" class="sub-btn tg" target="_blank">Telegram</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-info">
+                <h4>Фабрика «Лестничный Хаб»</h4>
+                <p>Проектирование и монтаж прочных металлоконструкций любой сложности.</p>
+            </div>
+            <div>
+                <p>Связь напрямую с Максом:</p>
+                <a href="tel:+79006223883" class="phone-btn" style="font-size: 22px; color: var(--primary-color);">8 (900) 622-38-83</a>
+                <p style="margin-top: 5px; font-size: 14px;">Email для чертежей: Metallmaster.78@yandex.ru</p>
+            </div>
+        </div>
+        <p style="font-size: 13px; color: #666; border-top: 1px solid #333; padding-top: 20px;">&copy; 2026 Лестничный Хаб. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function filterGallery(event, category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.tab-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-cat') === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        let currentStep = 1;
+        const totalSteps = 4;
+        let selectedAnswers = {};
+
+        function selectOption(element, stepId, answerText) {
+            const cards = document.querySelectorAll(`#${stepId} .option-card`);
+            cards.forEach(card => card.classList.remove('selected'));
+            element.classList.add('selected');
+            
+            const radio = element.querySelector('input[type="radio"]');
+            if(radio) radio.checked = true;
+
+            selectedAnswers[stepId] = answerText;
+            
+            setTimeout(() => { changeStep(1); }, 400);
+        }
+
+        function changeStep(direction) {
+            const currentStepEl = document.getElementById(`step${currentStep}`);
+            
+            if (direction === 1 && currentStep < totalSteps && !selectedAnswers[`step${currentStep}`]) {
+                alert("Пожалуйста, выберите один из вариантов ответа.");
+                return;
+            }
+
+            currentStepEl.classList.add('exit');
+            currentStepEl.classList.remove('active');
+
+            setTimeout(() => {
+                currentStepEl.classList.remove('exit');
+                currentStepEl.style.display = 'none';
+
+                currentStep += direction;
+                const nextStepEl = document.getElementById(`step${currentStep}`);
+                nextStepEl.style.display = 'block';
+                
+                setTimeout(() => {
+                    nextStepEl.classList.add('active');
+                }, 50);
+
+                const progressPercent = (currentStep / totalSteps) * 100;
+                document.getElementById('progressFill').style.width = `${progressPercent}%`;
+
+                document.getElementById('prevBtn').style.display = currentStep === 1 ? 'none' : 'block';
+                
+                if (currentStep === totalSteps) {
+                    document.getElementById('nextBtn').style.display = 'none';
+                    document.getElementById('submitBtn').style.display = 'block';
+                    document.getElementById('quizSummary').value = Object.values(selectedAnswers).join('; ');
+                } else {
+                    document.getElementById('nextBtn').style.display = 'block';
+                    document.getElementById('submitBtn').style.display = 'none';
+                }
+            }, 300);
+        }
+
+        function toggleWidget() {
+            document.getElementById('contactWidget').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
